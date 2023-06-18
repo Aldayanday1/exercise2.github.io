@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body class="body-1">
+    <h1>Page 2</h1>
+    <div class="container-1">
+        <div class="container-txt">
+            <div class="header-1">
+                <h3 class="header-2">FORM PENDAFTARAN TIKET</h3>
+                <span>KONSER - LAST CHILD</span>
+            </div>
+            <form id="ticketForm">
+                <label for="nama">Nama</label><br><br>
+                <input class="label-nama" type="text" placeholder="Tuliskan Nama Anda" id="nama"><br>
+                <p class="date-time">
+                    Tanggal Lahir :
+                    <input type="date" id="tanggal">
+                </p>
+                <p class="label-box">
+                    Jumlah Tiket :
+                    <select id="mySelect">
+                        <option>1 Tiket</option>
+                        <option>2 Tiket</option>
+                        <option>3 Tiket</option>
+                        <option>4 Tiket</option>
+                        <option>5 Tiket</option>
+                    </select>
+                </p>
+                <p>Jenis Tiket :</p>
+                <input type="radio" name="tiket" id="VVIP" value="VVIP">
+                <label for="VVIP">Kursi Depan (VVIP)</label><br>
+                <input type="radio" name="tiket" id="VIP-A" value="VIP-A">
+                <label for="VIP-A">Kursi Tengah (VIP A)</label><br>
+                <input type="radio" name="tiket" id="Yellow-A" value="Yellow-A">
+                <label for="Yellow-A">Kursi Belakang (Yellow A)</label><br>
+                <input type="radio" name="tiket" id="Yellow-B" value="Yellow-B">
+                <label for="Yellow-B">Kursi Belakang (Yellow B)</label><br><br>
+                <label for="harga">Harga Tiket</label>
+                <textarea placeholder="Tulis Harga Tiket (mis. 50.000)" name="harga" id="harga" cols="30" rows="5"></textarea><br>
+                <label for="total">Total Harga Tiket </label>
+                <textarea placeholder="Tulis Keseluruhan Harga Tiket" name="total" id="total" cols="30" rows="5"></textarea><br><br>
+                <button class="back" type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
